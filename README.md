@@ -204,6 +204,9 @@ The model was used to generate predictions on the test dataset and create the fi
 
 ## Repository Structure
 
+## Repository Structure
+
+```text
 .
 ├── customer-churn-prediction.ipynb
 ├── images/
@@ -211,6 +214,7 @@ The model was used to generate predictions on the test dataset and create the fi
 │   ├── salary_age_exit.png
 │   └── product_balance_exit.png
 └── README.md
+```
 
 ---
 
