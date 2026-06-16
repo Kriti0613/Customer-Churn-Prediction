@@ -1,36 +1,57 @@
 # Customer Churn Prediction
 
-Machine learning project focused on predicting customer churn to help businesses identify at-risk customers and improve retention strategies.
+Machine learning project focused on predicting customer churn using customer demographics, account information, and banking activity data.
 
 ## Overview
 
-This project uses customer demographic and service usage data to predict whether a customer is likely to leave a company. The workflow covers data preprocessing, exploratory data analysis, feature engineering, model development, and performance evaluation.
+The objective of this project is to identify customers who are likely to leave a financial institution. The workflow includes data preprocessing, feature engineering, model development, hyperparameter tuning, and performance evaluation.
 
 ## Dataset
 
-The dataset contains customer information such as demographics, account details, subscription services, and billing history.
+The dataset contains customer demographic and account-related information, including:
 
-**Target Variable:** `Churn`
+* Credit score
+* Country
+* Gender
+* Age
+* Tenure
+* Account balance
+* Product count
+* Card ownership
+* Account activity status
+* Estimated salary
+
+**Target Variable:** `exit_status`
 
 ## Methodology
 
-* Data cleaning and preprocessing
-* Exploratory Data Analysis (EDA)
-* Feature encoding and transformation
-* Feature selection
+* Missing value imputation using KNN Imputer and Simple Imputer
+* Feature scaling with StandardScaler
+* One-Hot Encoding for categorical variables
+* Variance Threshold feature selection
 * Model training and evaluation
-* Hyperparameter tuning
+* Hyperparameter tuning using GridSearchCV
 
 ## Models
 
 * Logistic Regression
-* Decision Tree Classifier
-* Random Forest Classifier
-* Gradient Boosting Classifier
+* Perceptron
+* K-Nearest Neighbors
+* Decision Tree
+* Random Forest
+* Gradient Boosting
+* AdaBoost
 
 ## Results
 
-The models were evaluated using classification metrics including Accuracy, Precision, Recall, F1-Score, and ROC-AUC.
+| Model             | Accuracy | F1 Score |
+| ----------------- | -------- | -------- |
+| Gradient Boosting | 86.07%   | 0.609    |
+| AdaBoost          | 85.76%   | 0.601    |
+| Random Forest     | 85.52%   | 0.599    |
+| KNN               | 84.11%   | 0.574    |
+
+**Best Model:** Gradient Boosting Classifier
 
 ## Technologies
 
@@ -44,7 +65,8 @@ The models were evaluated using classification metrics including Accuracy, Preci
 ## Skills Demonstrated
 
 * Binary Classification
-* Customer Analytics
 * Feature Engineering
+* Missing Value Treatment
 * Model Evaluation
 * Hyperparameter Tuning
+* Machine Learning Pipelines
