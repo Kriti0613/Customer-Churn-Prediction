@@ -11,6 +11,20 @@ Predicting customer churn for a financial institution using machine learning.
 * Performed hyperparameter tuning using GridSearchCV
 * Compared models using Accuracy, Precision, Recall, F1-Score, and ROC-AUC
 
+## Visualizations
+
+### Customer Churn Distribution
+
+![Customer Churn Distribution](images/churn_distribution.png)
+
+### Estimated Salary vs Exit Status
+
+![Salary vs Exit Status](images/salary_vs_exit.png)
+
+### Account Balance vs Product Count
+
+![Balance vs Product Count](images/balance_vs_products.png)
+
 ## Models Evaluated
 
 * Logistic Regression
